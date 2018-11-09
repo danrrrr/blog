@@ -23,15 +23,15 @@ module.exports = {
         sidebar: {
             '/blog/': [
                 'H5_wxShare',
+                'js_prototype',
             ],
             '/reading/': [
 
             ]
         },
         lastUpdated: "更新时间",
-        repo: "danrrrr/blog",
+        repo: "huxiaodanr/blog",
         docsDir: "docs",
-        editLinks: true,
-        editLinkText: "帮助我完善这篇内容🙏",
+        editLinks: false,
     }
 };
