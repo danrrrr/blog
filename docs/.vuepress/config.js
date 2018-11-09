@@ -29,6 +29,7 @@ module.exports = {
             ]
         },
         lastUpdated: "更新时间",
+        repo: "danrrrr/blog",
         docsDir: "docs",
         editLinks: true,
         editLinkText: "帮助我完善这篇内容🙏",
