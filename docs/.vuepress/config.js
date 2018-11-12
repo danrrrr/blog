@@ -1,7 +1,7 @@
 module.exports = {
     base: '/',
-    title: "胡小丹的学习笔记",
-    description: "Good good study, day day up! ",
+    title: '胡小丹的学习笔记',
+    description: 'Good good study, day day up! ',
     markdown: {
         lineNumbers: true
     },
@@ -22,6 +22,7 @@ module.exports = {
         ],
         sidebar: {
             '/blog/': [
+                'markdown',
                 'H5_wxShare',
                 'js_prototype',
             ],
