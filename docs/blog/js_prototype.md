@@ -153,3 +153,30 @@ Function.prototype.myApply = function(context, arr) {
 bar.myApply(foo, ['a', 'b']);
 
 ```
+
+##5. 箭头函数
+
+```js
+var obj = {
+  i: 10,
+  b: () => console.log(this.i, this),
+  c: function() {
+    console.log( this.i, this)
+  }
+}
+obj.b();
+// undefined Window
+obj.c();
+// 10, Object {...}
+```
+
+##6. 立即执行函数
+
+```js
+(function(){console.log(1)})();  // 1
+(function(){console.log(1)}())  // 1
++function(){console.log(1)}()   // 1
+-function(){console.log(1)}()   // 1
+var a = function(){console.log(1)}();   // 1
+```
+立即执行函数是通过运算符将函数声明转换为函数表达式，已达到立即执行效果

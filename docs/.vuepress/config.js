@@ -26,6 +26,9 @@ module.exports = {
                 'H5_wxShare',
                 'js_prototype',
             ],
+            '/interview/': [
+                'es6_base',
+            ],
             '/reading/': [
 
             ]

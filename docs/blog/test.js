@@ -46,3 +46,12 @@ Function.prototype.myApply = function(context, arr) {
     return res;
 }
 bar.myApply(foo, ['a', 'b']);
+
+// 求两个数组的并集交集
+
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [5, 6, 7, 8, 9];
+
+console.log([...new Set([...arr1, ...arr2])]);
+
+console.log([...new Set(arr1.filter(x => new Set(arr2).has(x)))]);
